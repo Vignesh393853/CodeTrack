@@ -1,0 +1,17 @@
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.app-layout {
+  display: flex;
+  min-height: 100vh;
+  background: #0b1120;
+}
+
+@media (max-width: 650px) {
+  .app-layout {
+    flex-direction: column;
+  }
+}

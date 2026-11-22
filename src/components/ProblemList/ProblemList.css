@@ -1,0 +1,112 @@
+
+.problem-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.problem-item {
+  background: #111c2e;
+  border: 1px solid #26364c;
+  border-radius: 10px;
+  padding: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.problem-info h3 {
+  color: #ffffff;
+  font-size: 15px;
+  margin-bottom: 7px;
+}
+
+.problem-info p,
+.problem-info small {
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+.problem-info small {
+  display: block;
+  margin-top: 6px;
+}
+
+.problem-info h3.completed {
+  text-decoration: line-through;
+  color: #64748b;
+}
+
+.difficulty,
+.problem-status {
+  display: inline-block;
+  margin-top: 10px;
+  margin-right: 8px;
+  padding: 5px 9px;
+  border-radius: 5px;
+  font-size: 11px;
+}
+
+.difficulty.easy {
+  background: #14532d;
+  color: #86efac;
+}
+
+.difficulty.medium {
+  background: #713f12;
+  color: #fde68a;
+}
+
+.difficulty.hard {
+  background: #7f1d1d;
+  color: #fca5a5;
+}
+
+.problem-status {
+  background: #1e3a5f;
+  color: #7dd3fc;
+}
+
+.problem-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.problem-actions button {
+  padding: 8px 11px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  color: white;
+  font-size: 12px;
+}
+
+.complete-btn {
+  background: #047857;
+}
+
+.delete-btn {
+  background: #b91c1c;
+}
+
+.empty-state {
+  padding: 30px;
+  text-align: center;
+  background: #111c2e;
+  border-radius: 10px;
+  color: #94a3b8;
+}
+
+.empty-state h3 {
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+  .problem-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
